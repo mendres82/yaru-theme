@@ -19,7 +19,7 @@
 
 %define _name   yaru
 Name:           yaru-theme
-Version:        25.10.3
+Version:        26.04.2.1ubuntu
 Release:        0
 Summary:        Yaru theme from the Ubuntu community
 License:        GPL-3.0-or-later AND LGPL-2.1-only AND LGPL-3.0-only AND CC-BY-SA-4.0
