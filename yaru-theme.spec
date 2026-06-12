@@ -19,7 +19,7 @@
 
 %define _name   yaru
 Name:           yaru-theme
-Version:        26.04.5.1ubuntu
+Version:        26.10.1
 Release:        0
 Summary:        Yaru theme from the Ubuntu community
 License:        GPL-3.0-or-later AND LGPL-2.1-only AND LGPL-3.0-only AND CC-BY-SA-4.0
@@ -51,15 +51,6 @@ Supplements:    (gnome-shell and theme-yaru)
 
 This package contains GNOME Shell Theme.
 
-%package -n gtk2-metatheme-yaru
-Summary:        GTK+ 2 support for the Yaru Gtk Theme
-License:        GPL-3.0-or-later AND LGPL-2.1-only AND LGPL-3.0-only AND CC-BY-SA-4.0
-Requires:       gtk2-engine-murrine
-Requires:       gtk2-theming-engine-adwaita
-
-%description -n gtk2-metatheme-yaru
-This is the theme shaped by the community on the Ubuntu hub.
-
 %package -n gtk3-metatheme-yaru
 Summary:        GTK+ 3 support for the Yaru Gtk Theme
 License:        GPL-3.0-or-later AND LGPL-2.1-only AND LGPL-3.0-only AND CC-BY-SA-4.0
@@ -80,7 +71,6 @@ This is the theme shaped by the community on the Ubuntu hub.
 Summary:        Yaru icon theme
 License:        CC-BY-SA-4.0
 Requires:       hicolor-icon-theme >= 0.17
-Requires:       humanity-icon-theme >= 0.6.16
 
 %description -n yaru-icon-theme
 This is the theme shaped by the community on the Ubuntu hub.
@@ -160,12 +150,6 @@ rm  %{buildroot}%{_datadir}/glib-2.0/schemas/99_Yaru.gschema.override \
 %dir %{_datadir}/themes/Yaru-wartybrown
 %dir %{_datadir}/themes/Yaru-yellow-dark
 %dir %{_datadir}/themes/Yaru-yellow
-
-%files -n gtk2-metatheme-yaru
-%{_datadir}/themes/Yaru-*/gtk-2.0/
-%{_datadir}/themes/Yaru/gtk-2.0/
-%dir %{_datadir}/themes/Yaru
-%dir %{_datadir}/themes/Yaru-dark
 
 %files -n gtk3-metatheme-yaru
 %{_datadir}/themes/Yaru-*/gtk-3.*/
