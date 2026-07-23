@@ -1,7 +1,26 @@
 <services>
   <service name="download_url">
-    <param name="host">github.com</param>
+    <param name="host">raw.githubusercontent.com</param>
     <param name="protocol">https</param>
-    <param name="path">/ubuntu/yaru/archive/26.10.1/yaru-26.10.1.tar.gz</param>
+    <param name="path">/mendres82/yaru-theme/refs/heads/main/yaru-theme.spec</param>
+    <param name="filename">yaru-theme.spec</param>
+  </service>
+  <service name="download_url">
+    <param name="host">raw.githubusercontent.com</param>
+    <param name="protocol">https</param>
+    <param name="path">/mendres82/yaru-theme/refs/heads/main/yaru-theme.changes</param>
+    <param name="filename">yaru-theme.changes</param>
+  </service>
+  <service name="obs_scm">
+    <param name="url">https://github.com/ubuntu/yaru.git</param>
+    <param name="scm">git</param>
+    <param name="revision">@PARENT_TAG@</param>
+    <param name="versionformat">@PARENT_TAG@</param>
+    <param name="match-tag">[0-9][0-9].[0-9][0-9].[0-9]</param>
+    <param name="filename">yaru</param>
+  </service>
+  <service name="tar" mode="buildtime"/>
+  <service name="set_version" mode="buildtime">
+    <param name="basename">yaru</param>
   </service>
 </services>

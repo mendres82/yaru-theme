@@ -1,7 +1,7 @@
 #
 # spec file for package yaru-theme
 #
-# Copyright (c) 2024 mantarimay
+# Copyright (c) 2026 mendres82
 # Copyright (c) 2023 SUSE LLC
 #
 # All modifications and additions to the file contributed by third parties
@@ -19,12 +19,12 @@
 
 %define _name   yaru
 Name:           yaru-theme
-Version:        26.10.1
+Version:        0
 Release:        0
 Summary:        Yaru theme from the Ubuntu community
 License:        GPL-3.0-or-later AND LGPL-2.1-only AND LGPL-3.0-only AND CC-BY-SA-4.0
 URL:            https://github.com/ubuntu/yaru
-Source:         %{url}/archive/%{version}/%{_name}-%{version}.tar.gz
+Source:         %{_name}-%{version}.tar
 BuildRequires:  fdupes
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  meson >= 0.59
