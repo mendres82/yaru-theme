@@ -27,7 +27,7 @@ URL:            https://github.com/ubuntu/yaru
 Source:         %{_name}-%{version}.tar
 BuildRequires:  fdupes
 BuildRequires:  hicolor-icon-theme
-BuildRequires:  meson >= 0.59
+BuildRequires:  meson >= 1.4
 BuildRequires:  pkgconfig
 BuildRequires:  sassc
 BuildRequires:  pkgconfig(glib-2.0)
@@ -107,10 +107,10 @@ This package contains the GtkSourceView theme.
 %install
 %meson_install
 
-rm  %{buildroot}%{_datadir}/glib-2.0/schemas/99_Yaru.gschema.override \
-    %{buildroot}%{_datadir}/xsessions/Yaru-xorg.desktop \
-    %{buildroot}%{_datadir}/wayland-sessions/Yaru.desktop \
-    %{buildroot}%{_datadir}/gnome-shell/extensions/ubuntu-dock@ubuntu.com/yaru.css
+rm -rf %{buildroot}%{_datadir}/glib-2.0 \
+       %{buildroot}%{_datadir}/xsessions \
+       %{buildroot}%{_datadir}/wayland-sessions \
+       %{buildroot}%{_datadir}/gnome-shell/extensions
 
 %fdupes %{buildroot}%{_datadir}/themes/Yaru*/
 %fdupes %{buildroot}%{_datadir}/gnome-shell/theme/Yaru*/
